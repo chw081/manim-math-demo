@@ -1,6 +1,6 @@
 # This file is used internally by FFMPEG.
-file 'file:/Users/christinewu/manim/media/videos/lec02/480p15/partial_movie_files/SameSurface/4266129954_3825158919_223132457.mp4'
-file 'file:/Users/christinewu/manim/media/videos/lec02/480p15/partial_movie_files/SameSurface/1442284246_1748622299_930992657.mp4'
-file 'file:/Users/christinewu/manim/media/videos/lec02/480p15/partial_movie_files/SameSurface/1442284246_3156612427_307660395.mp4'
-file 'file:/Users/christinewu/manim/media/videos/lec02/480p15/partial_movie_files/SameSurface/1442284246_345352296_3174833024.mp4'
-file 'file:/Users/christinewu/manim/media/videos/lec02/480p15/partial_movie_files/SameSurface/1442284246_4271507841_637440167.mp4'
+file 'file:/Users/christinewu/manim-math-demo/media/videos/lec02/480p15/partial_movie_files/SameSurface/4266129954_3825158919_223132457.mp4'
+file 'file:/Users/christinewu/manim-math-demo/media/videos/lec02/480p15/partial_movie_files/SameSurface/1442284246_1748622299_930992657.mp4'
+file 'file:/Users/christinewu/manim-math-demo/media/videos/lec02/480p15/partial_movie_files/SameSurface/1442284246_3156612427_307660395.mp4'
+file 'file:/Users/christinewu/manim-math-demo/media/videos/lec02/480p15/partial_movie_files/SameSurface/1442284246_345352296_3174833024.mp4'
+file 'file:/Users/christinewu/manim-math-demo/media/videos/lec02/480p15/partial_movie_files/SameSurface/1442284246_4271507841_637440167.mp4'
