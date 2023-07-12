@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/christinewu/manim/media/videos/lec01/480p15/partial_movie_files/CreateCircle/4266129954_3529529341_223132457.mp4'
+file 'file:/Users/christinewu/manim/media/videos/lec01/480p15/partial_movie_files/CreateCircle/1442284246_3165912172_1785083143.mp4'
+file 'file:/Users/christinewu/manim/media/videos/lec01/480p15/partial_movie_files/CreateCircle/1442284246_3221772857_551355263.mp4'
+file 'file:/Users/christinewu/manim/media/videos/lec01/480p15/partial_movie_files/CreateCircle/1442284246_190949118_445320706.mp4'
+file 'file:/Users/christinewu/manim/media/videos/lec01/480p15/partial_movie_files/CreateCircle/1442284246_2570727616_2106345918.mp4'
+file 'file:/Users/christinewu/manim/media/videos/lec01/480p15/partial_movie_files/CreateCircle/1442284246_2679422647_2193283346.mp4'
+file 'file:/Users/christinewu/manim/media/videos/lec01/480p15/partial_movie_files/CreateCircle/1442284246_2987580717_2254930702.mp4'
+file 'file:/Users/christinewu/manim/media/videos/lec01/480p15/partial_movie_files/CreateCircle/1442284246_2411804568_2013537353.mp4'
+file 'file:/Users/christinewu/manim/media/videos/lec01/480p15/partial_movie_files/CreateCircle/1442284246_1083902196_4136559472.mp4'
+file 'file:/Users/christinewu/manim/media/videos/lec01/480p15/partial_movie_files/CreateCircle/1442284246_283437484_3304143847.mp4'
+file 'file:/Users/christinewu/manim/media/videos/lec01/480p15/partial_movie_files/CreateCircle/1442284246_3810509355_3993849293.mp4'
