@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/christinewu/manim-math-demo/media/videos/lec03/480p15/partial_movie_files/lec03/905710926_1874054834_1427482019.mp4'
+file 'file:/Users/christinewu/manim-math-demo/media/videos/lec03/480p15/partial_movie_files/lec03/3938964576_496860410_1427482019.mp4'
+file 'file:/Users/christinewu/manim-math-demo/media/videos/lec03/480p15/partial_movie_files/lec03/3938964576_540671282_4082068111.mp4'
+file 'file:/Users/christinewu/manim-math-demo/media/videos/lec03/480p15/partial_movie_files/lec03/3938964576_2327663248_2680923901.mp4'
+file 'file:/Users/christinewu/manim-math-demo/media/videos/lec03/480p15/partial_movie_files/lec03/3938964576_2232148465_1942689216.mp4'
+file 'file:/Users/christinewu/manim-math-demo/media/videos/lec03/480p15/partial_movie_files/lec03/3938964576_4042554381_2777812587.mp4'
+file 'file:/Users/christinewu/manim-math-demo/media/videos/lec03/480p15/partial_movie_files/lec03/3938964576_203932947_3813718460.mp4'
