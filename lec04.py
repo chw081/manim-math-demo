@@ -6,7 +6,7 @@ class lec04(ThreeDScene):
         self.set_camera_orientation(phi=45*DEGREES, theta=-35*DEGREES,zoom=0.6)
         self.move_camera(frame_center= [4, -0.5, 1])
         baseCube = Cube(side_length=1, fill_opacity=1, fill_color=RED, stroke_width=0.2, stroke_color=BLACK)
-        transformShift = 4
+        transformShift = 5
         prevSum = 0
         self.play(FadeIn(baseCube))
         self.play(baseCube.copy().animate(run_time=1.5).shift(RIGHT * transformShift))
@@ -37,11 +37,18 @@ class lec04(ThreeDScene):
         prevSum += 3
         self.play(FadeIn(newCubes))
         self.play(*self.evenSquare(4, newCubes, transformShift, prevSum))
+        newCubes = self.createCubes(5, PURPLE).shift(UP * 18)
+        prevSum += 4
+        self.play(FadeIn(newCubes))
+        self.play(*self.oddSquare(5, newCubes, transformShift, prevSum))
+        newCubes = self.createCubes(6, YELLOW).shift(UP * 30)
+        prevSum += 5
+        self.play(FadeIn(newCubes))
     
     def evenSquare(self, n, newCubes, transformShift, prevSum):
         groups = []
-        rightShift = transformShift + n - 0.5
-        upShift = prevSum + n//2 - 0.5
+        rightShift = transformShift + (n - 1)//2 * 0.5 + (n * 3 / 2) * 0.5
+        upShift = prevSum + (n - 1) * 0.5
         cubesCopy = newCubes.copy()
         for i in range(n//2):
             group = cubesCopy[i]
@@ -49,27 +56,24 @@ class lec04(ThreeDScene):
             #groups.add(AnimationGroup(*[c.animate(run_time=1.5).move_to([transShift+i*n, prevSum, -i]) for c in group]))
         for i in range(n//2, n - 1, 1):
             group = cubesCopy[i]
-            groups.append(group.animate(run_time=1.5).move_to([transformShift + upShift, upShift - (i - n//2) * n, 0]))
+            groups.append(group.animate(run_time=1.5).move_to([transformShift + upShift, upShift - (i - n//2 + 1) * n, 0]))
         evenSeperateSub1 = VGroup(*[newCubes[-1][0:n**2//2].copy()])
         evenSeperateSub2 = VGroup(*[newCubes[-1][n**2//2:n**2].copy()])
-        groups.append(evenSeperateSub1.animate(run_time=1.5).move_to([transformShift, upShift, 0]))
-        if n//2 == 0:
-            groups.append(evenSeperateSub2.animate(run_time=1.5).move_to([transformShift + upShift, 0.5, 0]).rotate(90 * DEGREES, axis=[0, 0, 1]))
-        else:
-            groups.append(evenSeperateSub2.animate(run_time=1.5).move_to([transformShift + upShift, 0, 0]).rotate(90 * DEGREES, axis=[0, 0, 1]))
+        groups.append(evenSeperateSub1.animate(run_time=1.5).move_to([transformShift + (n - 1)//2 * 0.5, upShift, 0]))
+        groups.append(evenSeperateSub2.animate(run_time=1.5).move_to([transformShift + upShift, (n - 1)//2 * 0.5, 0]).rotate(90 * DEGREES, axis=[0, 0, 1]))
         return groups
     
     def oddSquare(self, n, newCubes, transformShift, prevSum):
         groups = []
         rightShift = transformShift + n//2
-        upShift = prevSum + n//2
+        upShift = prevSum + (n - 1) * 0.5
         cubesCopy = newCubes.copy()
         for i in range(n//2):
             group = cubesCopy[i]
             groups.append(group.animate(run_time=1.5).move_to([rightShift + i * n, upShift, 0]))
         for i in range(n//2, n, 1):
             group = cubesCopy[i]
-            groups.append(group.animate(run_time=1.5).move_to([rightShift + upShift - 1, upShift - (i - n//2) * n, 0]))
+            groups.append(group.animate(run_time=1.5).move_to([transformShift + upShift, upShift - (i - n//2) * n, 0]))
         return groups
     
     def layers(self, n, d):
